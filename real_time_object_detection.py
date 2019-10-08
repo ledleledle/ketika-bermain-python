@@ -30,8 +30,8 @@ COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 
 # load our serialized model from disk
 print("[INFO] loading model...")
-proto = MobileNetSSD_deploy.prototxt.txt
-model = MobileNetSSD_deploy.caffemodel
+proto = "MobileNetSSD_deploy.prototxt.txt"
+model = "MobileNetSSD_deploy.caffemodel"
 net = cv2.dnn.readNetFromCaffe(proto, model)
 #net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 
